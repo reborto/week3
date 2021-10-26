@@ -17,3 +17,41 @@
     SUGGERIMENTO: esistono delle funzioni della libreria Math (vista a lezione).
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 */
+
+
+//operazione=funzione
+const sum = (numOne, numTwo) => numOne + numTwo;
+const mult = (numOne, numTwo) => numOne * numTwo;
+const division = (numOne, numTwo) => numOne / numTwo;
+const sub = (numOne, numTwo) => numOne - numTwo;
+
+
+if (operationChoice === "somma" || "+") {
+  calculator(sum, parsedNumbers);
+}
+if (operationChoice === "moltiplicazione" || "*") {
+    calculator(mult, parsedNumbers);
+}
+if (operationChoice === "divisione" || "/") {
+    calculator(division, parsedNumbers);
+}
+if (operationChoice === "sottrazione" || "-") {
+    calculator(sub, parsedNumbers);
+}
+
+function calculator(operation, numbers) {
+    let totOperation = 0;
+    totOperation = operation(...numbers);
+    return totOperation;
+}
+
+let operationChoice = prompt("Inserisci operazione: ");
+let numbersChoiche = prompt("Inserisci numeri: ");
+const numbers = numbersChoiche.split(","); /*lo split ritorna un array*/
+
+const parsedNumbers = [];
+for (x of numbers) {
+    parsedNumbers.push(parseInt(x));
+  }
+calculator(operationChoice, parsedNumbers);
+console.log(calculator(operationChoice, parsedNumbers));  
