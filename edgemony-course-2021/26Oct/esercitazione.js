@@ -26,23 +26,28 @@ const division = (numOne, numTwo) => numOne / numTwo;
 const sub = (numOne, numTwo) => numOne - numTwo;
 
 
-if (operationChoice === "somma" || "+") {
-  calculator(sum, parsedNumbers);
-}
-if (operationChoice === "moltiplicazione" || "*") {
-    calculator(mult, parsedNumbers);
-}
-if (operationChoice === "divisione" || "/") {
-    calculator(division, parsedNumbers);
-}
-if (operationChoice === "sottrazione" || "-") {
-    calculator(sub, parsedNumbers);
-}
+
 
 function calculator(operation, numbers) {
     let totOperation = 0;
-    totOperation = operation(...numbers);
+    totOperation = operationFunc(operation, ...numbers);
     return totOperation;
+}
+
+function operationFunc(operation, ...parsedNumbers){
+    if (operation === "somma" || "+") {
+        return sum(...parsedNumbers);
+        
+      }
+    if (operation === "moltiplicazione" || "*") {
+        return mult(...parsedNumbers);
+      }
+    if (operation === "divisione" || "/") {
+        return division(...parsedNumbers);
+      }
+    if (operation === "sottrazione" || "-") {
+          return sub(...parsedNumbers);
+      }
 }
 
 let operationChoice = prompt("Inserisci operazione: ");
@@ -53,5 +58,6 @@ const parsedNumbers = [];
 for (x of numbers) {
     parsedNumbers.push(parseInt(x));
   }
+
 calculator(operationChoice, parsedNumbers);
 console.log(calculator(operationChoice, parsedNumbers));  
