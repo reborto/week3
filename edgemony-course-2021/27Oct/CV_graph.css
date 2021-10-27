@@ -22,8 +22,13 @@ body{
     padding: 15px;
 
 }
+.darkMode .btnDarkMode{
+    font:#f2f5d8;
+    background:#9a2733 ;
+}
 .darkMode .testata{
-    color: #f2f5d8;
+    color: #9a2733;
+    background:#f2f5d8 ;
 }
 
 .testata{
@@ -52,6 +57,13 @@ ul{
     list-style-type: none;
 }
 
+ul li {
+    color:black;
+    font-style: italic;
+}
+.darkMode ul li{
+    color: #d4c5c8;}
+
 ul li b{
     color: #9a2733;
     font-style: italic;
@@ -68,7 +80,10 @@ ul li b{
    align-items:center;
    padding: 15px 35px;
    border-radius: 35px;
-
+}
+.darkMode .sottotitolo{
+    background: #f2f5d8;
+    color: #9a2733;
 }
 .content{
     display: block;
@@ -96,4 +111,8 @@ ul li b{
     justify-content: center;
     padding: 50px;
     border-radius: 35px;
+}
+.darkMode .footer{
+    background:#f2f5d8 ;
+    color: #9a2733;
 }
