@@ -63,8 +63,13 @@ ul li b{
 
 }
 .content{
-    display: block;}
+    display: block;
+}
 
+.content2{
+    display: block;
+    align-content: flex-start;
+}
 .button2{
     background: #9a2733;
     color: #d4c5c8;
