@@ -41,6 +41,11 @@ body{
     background: #9a2733;
     padding: 25px 25px;
 }
+.onz{display: flex;
+    justify-content: space-between;
+    background: #9a2732;
+    border-radius: 35px;
+}
 
 .testata div{
     display: flex;
@@ -86,12 +91,11 @@ ul li b{
     color: #9a2733;
 }
 .content{
-    display: block;
 }
 
 .content2{
-    display: block;
-    align-content: flex-start;
+    /* display: block;
+    align-content: flex-start; */
 }
 .button2{
     background: #9a2733;
