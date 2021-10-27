@@ -5,12 +5,12 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
-.dark-theme{
+.darkMode{
     background-color: #9a2733;
     color: #d4c5c8;
 }
 
-.button {
+.btnDarkMode {
     background: #9a2733;
     color: #d4c5c8;
     position: relative;
@@ -21,7 +21,6 @@ body{
     padding: 15px;
 
 }
-
 
 .testata{
     display: flex;
@@ -39,15 +38,6 @@ body{
     justify-content: left;
     gap: 20px;
 }
-h3{
-    color: #d4c5c8;
-    background: #9a2733;
-    border-radius: 25px;
-    font-style: italic;
-    padding: 10px 35px;
-    size: auto;
-
-}
 p{
     padding: 35px;;
 }
@@ -62,25 +52,19 @@ ul li b{
     font-style: italic;
 
 }
-.content{
-    display: block;
-    
-}
-.content div{
-display: flex;
-align-items: center;
-align-content: flex-start;
-justify-content: left;
-gap: 5px;
-color: #d4c5c8;
-background: #9a2733;
-border-radius: 25px;
-font-style: italic;
-margin: none;
-padding: none;
-border:none;
+.sottotitolo{
+    font-style: italic;
+    color: whitesmoke;
+    background-color:#9a2733;
+    display: flex;
+   align-items:center;
+   padding: 15px 35px;
+   border-radius: 35px;
 
 }
+.content{
+    display: block;}
+
 .button2{
     background: #9a2733;
     color: #d4c5c8;

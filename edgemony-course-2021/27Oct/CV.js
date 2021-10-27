@@ -1,4 +1,6 @@
-const themeSwitch = document.querySelector(input);
-themeSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('dark-theme')
-})
+const darkModeBtn = document.querySelector(".btnDarkMode");
+darkModeBtn.addEventListener(
+    "click",
+    () => {
+        document.body.classList.toggle("darkMode");
+    }
