@@ -10,6 +10,7 @@ body{
     color: #d4c5c8;
 }
 
+
 .btnDarkMode {
     background: #9a2733;
     color: #d4c5c8;
@@ -20,6 +21,9 @@ body{
     font-size: medium;
     padding: 15px;
 
+}
+.darkMode .testata{
+    color: #f2f5d8;
 }
 
 .testata{
@@ -32,6 +36,7 @@ body{
     background: #9a2733;
     padding: 25px 25px;
 }
+
 .testata div{
     display: flex;
     align-items: center;
@@ -51,6 +56,9 @@ ul li b{
     color: #9a2733;
     font-style: italic;
 
+}
+.darkMode ul li b{
+    color: #f2f5d8;
 }
 .sottotitolo{
     font-style: italic;
