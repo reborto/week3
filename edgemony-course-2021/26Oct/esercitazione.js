@@ -30,8 +30,8 @@ const sub = (numOne, numTwo) => numOne - numTwo;
 
 function calculator(operation, numbers) {
     let totOperation = 0;
-    totOperation = operationFunc(operation, ...numbers);
-    return totOperation;
+    totOperation = /*operationFunc*/ operation(...numbers);
+    return totOperation
 }
 
 function operationFunc(operation, ...parsedNumbers){
