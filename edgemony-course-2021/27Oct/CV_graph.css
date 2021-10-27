@@ -7,7 +7,7 @@ body{
 }
 .dark-theme{
     background-color: #9a2733;
-    color: d4c5c8;
+    color: #d4c5c8;
 }
 
 .button {
@@ -33,6 +33,12 @@ body{
     background: #9a2733;
     padding: 25px 25px;
 }
+.testata div{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
 h3{
     color: #d4c5c8;
     background: #9a2733;
@@ -45,10 +51,9 @@ h3{
 p{
     padding: 35px;;
 }
+
 ul{
     color: #000;
-}
-ul{
     list-style-type: none;
 }
 
@@ -59,8 +64,34 @@ ul li b{
 }
 .content{
     display: block;
-    order: 4;
+    
 }
+.content div{
+display: flex;
+align-items: center;
+align-content: flex-start;
+justify-content: left;
+gap: 5px;
+color: #d4c5c8;
+background: #9a2733;
+border-radius: 25px;
+font-style: italic;
+margin: none;
+padding: none;
+border:none;
+
+}
+.button2{
+    background: #9a2733;
+    color: #d4c5c8;
+    position: relative;
+    display: inline-block;
+    border-radius: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 5px 10px;
+}
+
 .footer{
     background-color: #9a2733;
     color: #d4c5c8;
