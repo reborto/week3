@@ -8,13 +8,23 @@ darkModeBtn.addEventListener(
 
 document.addEventListener("click", (event) => {
     const somma = document.querySelector(".somma");
-    let numberChoise = prompt ("inserisci numeri");
-    const numbers = numberChoise.split(",")  
-
-    const parsedNumbers =[]
-    const sum = (numOne, numTwo) => numOne + numTwo;
-
-    console.log();
+    let input = prompt ("inserisci numeri");
+    const numbers = input.split(","); 
+    //fino a qua, array con stringhe
+    const putnumbers =[];
+    for (x of numbers) {
+        putnumbers.push(parseInt(x))
+    }
+    console.log(putnumbers);
+    //qua, crea l'array con i numeri
+    const sum = (numOne, numTwo)=> numOne + numTwo;
+    function calc (operation, numbers) {
+        let totsum = 0
+        totsum = operation(...numbers)
+        return totsum;
+    }
+    calc(sum)
+    setTimeout (()=> {console.log(calc(sum))}, 5000)
 }
 );
 
