@@ -90,13 +90,7 @@ ul li b{
     background: #f2f5d8;
     color: #9a2733;
 }
-.content{
-}
 
-.content2{
-    /* display: block;
-    align-content: flex-start; */
-}
 .button2{
     background: #9a2733;
     color: #d4c5c8;
@@ -106,6 +100,20 @@ ul li b{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: medium;
     padding: 5px 10px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px; 
+    border-radius: 25px;
+    background: #9a2733;
+    margin: 50px auto;
+}
+.darkMode .circle{
+    background: #f2f5d8;
 }
 
 .footer{
