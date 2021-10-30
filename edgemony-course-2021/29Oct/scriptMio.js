@@ -21,6 +21,26 @@ apriprom.addEventListener("click", () => {
     h1Element.textContent = rename
 });
 
-const list = document.querySelector("ul")
-function
+
+const addElement = document.querySelector(".crea");
+const list = document.querySelector('ul');
+const inputAdd = document.querySelector(".add-Elemet")
+
+const addList = ()  =>{
+    const liAdd = document.createElement('li');
+    list.appendChild(liAdd);
+    liAdd.textContent = inputAdd.value;
+};
+
+inputAdd.addEventListener("keypress", (event) =>{
+    if (event.key === "Enter"){
+        addList()
+    }
+}
+);
+
+addElement.addEventListener("click", () =>{
+    addList()
+
+});
 
