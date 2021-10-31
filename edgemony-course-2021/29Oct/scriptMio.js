@@ -32,15 +32,17 @@ const addList = ()  =>{
     liAdd.textContent = inputAdd.value;
 };
 
+
 inputAdd.addEventListener("keypress", (event) =>{
     if (event.key === "Enter"){
         addList()
     }
-}
-);
+});
 
-addElement.addEventListener("click", () =>{
-    addList()
-
+addElement.addEventListener("click", (e) =>{
+   const liAdd = document.createElement('li');
+   list.appendChild(liAdd);
+   liAdd.textContent = prompt("ciao");
+   console.log(e)
 });
 
