@@ -43,6 +43,6 @@ addElement.addEventListener("click", (e) =>{
    const liAdd = document.createElement('li');
    list.appendChild(liAdd);
    liAdd.textContent = prompt("ciao");
-   console.log(e)
+//    console.log(e)
 });
 
